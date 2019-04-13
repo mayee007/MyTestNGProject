@@ -13,7 +13,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 
-@CucumberOptions(plugin = {"pretty", "html:target/cucumber-tests"}, 
+@CucumberOptions(plugin = {"pretty", "html:target/cucumber", "json:target/cucumber.json"}, 
 							features = {"src/test/resources" }, 
 							glue={"com.mine.testNG.steps"})	
 public class GoogleRunner {
