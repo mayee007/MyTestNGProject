@@ -23,7 +23,7 @@ public class GoogleRunner {
 	@Test(description = "Runs Cucumber Feature", dataProvider = "googleFeature")
     public void googleHomeFeature(CucumberFeatureWrapper cucumberFeature) {
 		System.out.println("inside Google runner");
-		System.setProperty("webdriver.chrome.driver","C:\\Users\\mayee\\workspace\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\MyInstalls\\chromedriver.exe");
 		driver = new ChromeDriver();
         testNGCucumberRunner.runCucumber(cucumberFeature.getCucumberFeature());
     }
